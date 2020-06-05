@@ -18,7 +18,7 @@ function handleDragOver(e) {
   }
   return false;
 }
-//拖拽完成后，作用在拖拽元素上
+
 function handleDrop(e) {
   if (dragSrcEl != this) {
     dragSrcEl.innerHTML = this.innerHTML;
@@ -26,7 +26,7 @@ function handleDrop(e) {
   }
   return false;
 }
-//拖拽完成后，作用在被拖拽元素上
+
 function handleDragEnd(e) {
   this.style.opacity = "1";
   [].forEach.call(li, function(d) {
